@@ -1,4 +1,4 @@
-package br.gov.dataprev.test.duckduckgo;
+package br.gov.dataprev.duckduckgo;
 
 import org.junit.runner.RunWith;
 
@@ -7,10 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	plugin = { "html:target/cucumber-html-report", "json:target/cucumber-json-report.json" },
+	plugin = { "pretty" },
 	features = { "src/test/resources" }
+	//,tags= {"@done"}
 )
 
-public class RunCukesTest {
-
+public class DuckDuckGoTest {
 }
